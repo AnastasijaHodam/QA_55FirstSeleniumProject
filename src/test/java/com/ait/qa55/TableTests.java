@@ -29,9 +29,9 @@ public class TableTests {
     @Test
     public void findElementTableWithCssTest() {
         //print number of row
-        List<WebElement> rows = driver.findElements(By.cssSelector("tr"));
+        List<WebElement> rows = driver.findElements(By.cssSelector("tr")); //masiv
         System.out.println(rows.size());
-        for(WebElement el:rows){
+        for(WebElement el:rows){ // el - element
             System.out.println(el.getText());
             //get row 4
             WebElement row4 = driver.findElement(By.cssSelector("tr:nth-child(4)"));// xpath -> //tr[4]
